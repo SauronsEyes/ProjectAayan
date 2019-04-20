@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AppHome"
+    android:background="#ffffff"
+    android:orientation="vertical">
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:src="@drawable/logo"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="400dp">
+        <android.support.v7.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:id="@+id/itemLists"
+            android:layout_height="match_parent"></android.support.v7.widget.RecyclerView>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:padding="20dp"
+        android:layout_marginTop="70dp"
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:background="@drawable/upside"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:gravity="center"
+            android:layout_width="wrap_content"
+            android:orientation="vertical"
+            android:layout_weight="1"
+            android:id="@+id/homeLayout"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:tint="#5CA745"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                app:srcCompat="@drawable/video"/>
+            <TextView
+                android:textColor="#5CA745"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Videos"/>
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/ProfileLayout"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:orientation="vertical"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                app:srcCompat="@drawable/person"/>
+            <TextView
+                android:textColor="#000"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="My Profile"/>
+        </LinearLayout>
+        <LinearLayout
+            android:gravity="center"
+            android:layout_weight="1"
+            android:id="@+id/uplink"
+            android:layout_width="wrap_content"
+            android:orientation="vertical"
+            android:layout_height="wrap_content">
+
+            <ImageView
+
+                android:layout_width="35dp"
+                android:layout_height="40dp"
+                app:srcCompat="@drawable/uploads" />
+            <TextView
+                android:textColor="#000"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Upload"/>
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>

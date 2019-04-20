@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical" android:layout_width="300dp"
+    android:layout_height="match_parent">
+
+
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/profile_image_item"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:paddingTop="30dp"
+        android:paddingBottom="10dp"
+
+        app:civ_border_color="#21a300"
+        app:civ_border_width="2dp"
+
+        />
+
+    <VideoView
+        android:id="@+id/myVideo"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_centerInParent="true" />
+    <TextView
+        android:textSize="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Gorilla Balls"
+        android:gravity="center"
+        android:id="@+id/itemsName"
+        android:textColor="#00911d"/>
+
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_marginTop="10dp"
+            android:textSize="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Seller: Sam"
+            android:gravity="center"
+            android:id="@+id/sellersNames"
+            android:textColor="#00be26"/>
+        <TextView
+            android:layout_marginTop="5dp"
+            android:textSize="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Filename"
+            android:gravity="center"
+            android:id="@+id/sellersAddress"
+            android:textColor="#00be26"/>
+        <LinearLayout
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_marginTop="5dp"
+                android:textSize="15dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Phone No: 9861488830"
+                android:id="@+id/sellersPhone"
+                android:textColor="#00be26"/>
+            <Button
+                android:background="@drawable/msg"
+                android:id="@+id/sendSms"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"
+                android:backgroundTint="#00be26"
+                android:layout_width="20dp"
+                android:layout_height="15dp"
+/>
+            <Button
+                android:background="@drawable/phoneico"
+                android:id="@+id/sendCall"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"
+                android:backgroundTint="#00be26"
+                android:layout_width="20dp"
+                android:layout_height="15dp"
+                />
+        </LinearLayout>
+
+
+    </LinearLayout>
+    <Button
+        android:id="@+id/dialogButtonOK"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Cancel"
+        android:layout_marginTop="23dp"
+
+        android:textSize="18sp"
+        style="@style/Widget.AppCompat.Button.Colored"
+       />
+
+</LinearLayout>
